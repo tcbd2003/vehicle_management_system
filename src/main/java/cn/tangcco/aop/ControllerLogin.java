@@ -12,6 +12,7 @@ public class ControllerLogin {
     private final Logger logger=Logger.getLogger("ControllerLogin");
 
     public void before(JoinPoint joinPoint){
+        //ssdffs
         //sdfasf
        // logger.info("调用了:"+joinPoint.getTarget()+"类的,"+joinPoint.getSignature().getName()+"方法,入参:"+ Arrays.toString(joinPoint.getArgs()));
     }
