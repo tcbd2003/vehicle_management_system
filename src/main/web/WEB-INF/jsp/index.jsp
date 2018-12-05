@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-          欢迎页!!!!!!
+          此页无用!!!!!!
   </body>
 </html>
