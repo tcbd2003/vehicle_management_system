@@ -5,17 +5,17 @@ package cn.tangcco.entity;
         driverId int(11) NOT NULL驾驶员ID
         state varchar(200) NOT NULL状态
         ds varchar(200) NOT NULL删除状态 正常:01 标记删除:02*/
-public class licenseplates {
+public class Licenseplates {
             private Integer lpId;
             private String lpName;
             private Integer driverId;
             private String state;
             private String ds;
 
-            public licenseplates() {
+            public Licenseplates() {
             }
 
-            public licenseplates(Integer lpId, String lpName, Integer driverId, String state, String ds) {
+            public Licenseplates(Integer lpId, String lpName, Integer driverId, String state, String ds) {
                 this.lpId = lpId;
                 this.lpName = lpName;
                 this.driverId = driverId;
@@ -65,7 +65,7 @@ public class licenseplates {
 
             @Override
             public String toString() {
-                return "licenseplates{" +
+                return "Licenseplates{" +
                         "lpId=" + lpId +
                         ", lpName='" + lpName + '\'' +
                         ", driverId=" + driverId +

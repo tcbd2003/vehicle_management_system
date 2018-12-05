@@ -4,16 +4,16 @@ package cn.tangcco.entity;
 cityid varchar(200) NOT NULL城市编码
 city varchar(40) NOT NULL城市名称
 provinceid varchar(200) NOT NULL所属省份编码*/
-public class cities {
+public class Cities {
     private Integer id;
     private String cityid;
     private String city;
     private String provinceid;
 
-    public cities() {
+    public Cities() {
     }
 
-    public cities(Integer id, String cityid, String city, String provinceid) {
+    public Cities(Integer id, String cityid, String city, String provinceid) {
         this.id = id;
         this.cityid = cityid;
         this.city = city;
@@ -54,7 +54,7 @@ public class cities {
 
     @Override
     public String toString() {
-        return "cities{" +
+        return "Cities{" +
                 "id=" + id +
                 ", cityid='" + cityid + '\'' +
                 ", city='" + city + '\'' +

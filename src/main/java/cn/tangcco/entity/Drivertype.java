@@ -4,16 +4,16 @@ package cn.tangcco.entity;
  dtName varchar(200) NOT NULL准驾类型名
  describe varchar(600) NOT NULL类型描述
  ds varchar(200) NOT NULL删除状态 正常:01 标记删除:02*/
-public class drivertype {
+public class Drivertype {
     private Integer dtId;
     private String dtName;
     private String describe;
     private String ds;
 
-    public drivertype() {
+    public Drivertype() {
     }
 
-    public drivertype(Integer dtId, String dtName, String describe, String ds) {
+    public Drivertype(Integer dtId, String dtName, String describe, String ds) {
         this.dtId = dtId;
         this.dtName = dtName;
         this.describe = describe;
@@ -54,7 +54,7 @@ public class drivertype {
 
     @Override
     public String toString() {
-        return "drivertype{" +
+        return "Drivertype{" +
                 "dtId=" + dtId +
                 ", dtName='" + dtName + '\'' +
                 ", describe='" + describe + '\'' +

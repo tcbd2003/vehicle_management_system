@@ -5,17 +5,17 @@ package cn.tangcco.entity;
  lpId int(11) NOT NULL牌照ID
  drivingState varchar(200) NOT NULL行驶状态 01:允许行驶 02:异常
  ds varchar(200) NOT NULL删除状态 正常:01 标记删除:02*/
-public class vehiclepermit {
+public class Vehiclepermit {
     private Integer vdrId;
     private Integer vehicleId;
     private Integer lpId;
     private String drivingState;
     private String ds;
 
-    public vehiclepermit() {
+    public Vehiclepermit() {
     }
 
-    public vehiclepermit(Integer vdrId, Integer vehicleId, Integer lpId, String drivingState, String ds) {
+    public Vehiclepermit(Integer vdrId, Integer vehicleId, Integer lpId, String drivingState, String ds) {
         this.vdrId = vdrId;
         this.vehicleId = vehicleId;
         this.lpId = lpId;
@@ -65,7 +65,7 @@ public class vehiclepermit {
 
     @Override
     public String toString() {
-        return "vehiclepermit{" +
+        return "Vehiclepermit{" +
                 "vdrId=" + vdrId +
                 ", vehicleId=" + vehicleId +
                 ", lpId=" + lpId +

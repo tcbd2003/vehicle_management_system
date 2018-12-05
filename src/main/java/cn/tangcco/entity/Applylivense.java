@@ -6,7 +6,7 @@ phone varchar(200) NOT NULL电话号码
 IDcardNo varchar(200) NOT NULL身份证号码
 ds varchar(200) NOT NULL删除状态
 memarks varchar(200) NOT NULL备注*/
-public class applylivense {
+public class Applylivense {
     private Integer applyId;
     private String name;
     private String phone;
@@ -14,10 +14,10 @@ public class applylivense {
     private String ds;
     private String memarks;
 
-    public applylivense() {
+    public Applylivense() {
     }
 
-    public applylivense(Integer applyId, String name, String phone, String IDcardNo, String ds, String memarks) {
+    public Applylivense(Integer applyId, String name, String phone, String IDcardNo, String ds, String memarks) {
         this.applyId = applyId;
         this.name = name;
         this.phone = phone;
@@ -76,7 +76,7 @@ public class applylivense {
 
     @Override
     public String toString() {
-        return "applylivense{" +
+        return "Applylivense{" +
                 "applyId=" + applyId +
                 ", name='" + name + '\'' +
                 ", phone='" + phone + '\'' +

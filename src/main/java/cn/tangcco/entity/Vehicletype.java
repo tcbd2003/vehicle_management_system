@@ -4,16 +4,16 @@ package cn.tangcco.entity;
  vtName varchar(200) NOT NULL车辆类型名称(小客车,货车)
  dtId int(11) NOT NULL准驾类型ID
  ds varchar(200) NOT NULL删除状态 正常:01 标记删除:02*/
-public class vehicletype {
+public class Vehicletype {
     private Integer vtId;
     private String vtName;
     private Integer dtId;
     private String ds;
 
-    public vehicletype() {
+    public Vehicletype() {
     }
 
-    public vehicletype(Integer vtId, String vtName, Integer dtId, String ds) {
+    public Vehicletype(Integer vtId, String vtName, Integer dtId, String ds) {
         this.vtId = vtId;
         this.vtName = vtName;
         this.dtId = dtId;
@@ -54,7 +54,7 @@ public class vehicletype {
 
     @Override
     public String toString() {
-        return "vehicletype{" +
+        return "Vehicletype{" +
                 "vtId=" + vtId +
                 ", vtName='" + vtName + '\'' +
                 ", dtId=" + dtId +

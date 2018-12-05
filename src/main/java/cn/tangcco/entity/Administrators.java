@@ -12,7 +12,7 @@ package cn.tangcco.entity;
  IDcardNo varchar(200) NOT NULL身份证号码
  addressId varchar(800) NOT NULL住址表ID
  ds varchar(200) NOT NULL删除状态 正常:01 标记删除:02*/
-public class administrators {
+public class Administrators {
     private Integer adminId;
     private String workNumber;
     private String adminName;
@@ -26,10 +26,10 @@ public class administrators {
     private String addressId;
     private String ds;
 
-    public administrators() {
+    public Administrators() {
     }
 
-    public administrators(Integer adminId, String workNumber, String adminName, String rolesId, String password, String email, String phone, String gender, String age, String IDcardNo, String addressId, String ds) {
+    public Administrators(Integer adminId, String workNumber, String adminName, String rolesId, String password, String email, String phone, String gender, String age, String IDcardNo, String addressId, String ds) {
         this.adminId = adminId;
         this.workNumber = workNumber;
         this.adminName = adminName;
@@ -142,7 +142,7 @@ public class administrators {
 
     @Override
     public String toString() {
-        return "administrators{" +
+        return "Administrators{" +
                 "adminId=" + adminId +
                 ", workNumber='" + workNumber + '\'' +
                 ", adminName='" + adminName + '\'' +

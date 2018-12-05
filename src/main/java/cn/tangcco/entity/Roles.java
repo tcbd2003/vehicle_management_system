@@ -2,14 +2,14 @@ package cn.tangcco.entity;
 
 /* rolesId int(11) NOT NULL
  rolesName varchar(200) NOT NULL*/
-public class roles {
+public class Roles {
     private Integer rolesId;
     private String rolesName;
 
-    public roles() {
+    public Roles() {
     }
 
-    public roles(Integer rolesId, String rolesName) {
+    public Roles(Integer rolesId, String rolesName) {
         this.rolesId = rolesId;
         this.rolesName = rolesName;
     }
@@ -32,7 +32,7 @@ public class roles {
 
     @Override
     public String toString() {
-        return "roles{" +
+        return "Roles{" +
                 "rolesId=" + rolesId +
                 ", rolesName='" + rolesName + '\'' +
                 '}';

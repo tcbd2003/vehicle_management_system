@@ -3,15 +3,15 @@ package cn.tangcco.entity;
 /* id int(11) NOT NULL
  provinceid int(11) NOT NULL
  province varchar(100) NOT NULL*/
-public class provinces {
+public class Provinces {
     private Integer id;
     private Integer provinceid;
     private String province;
 
-    public provinces() {
+    public Provinces() {
     }
 
-    public provinces(Integer id, Integer provinceid, String province) {
+    public Provinces(Integer id, Integer provinceid, String province) {
         this.id = id;
         this.provinceid = provinceid;
         this.province = province;
@@ -43,7 +43,7 @@ public class provinces {
 
     @Override
     public String toString() {
-        return "provinces{" +
+        return "Provinces{" +
                 "id=" + id +
                 ", provinceid=" + provinceid +
                 ", province='" + province + '\'' +

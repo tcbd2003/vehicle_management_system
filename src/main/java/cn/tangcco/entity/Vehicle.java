@@ -7,7 +7,7 @@ frameNumber varchar(200) NOT NULL车辆出厂编号
 describe varchar(500) NOT NULL车辆型号描述
 ds varchar(200) NOT NULL删除状态 正常:01 标记删除:02
 remarks varchar(200) NOT NULL删除状态备注*/
-public class vehicle {
+public class Vehicle {
     private Integer vehicleId;
     private String vehiclModle;
     private Integer vtId;
@@ -16,10 +16,10 @@ public class vehicle {
     private String ds;
     private String remarks;
 
-    public vehicle() {
+    public Vehicle() {
     }
 
-    public vehicle(Integer vehicleId, String vehiclModle, Integer vtId, String frameNumber, String describe, String ds, String remarks) {
+    public Vehicle(Integer vehicleId, String vehiclModle, Integer vtId, String frameNumber, String describe, String ds, String remarks) {
         this.vehicleId = vehicleId;
         this.vehiclModle = vehiclModle;
         this.vtId = vtId;
@@ -87,7 +87,7 @@ public class vehicle {
 
     @Override
     public String toString() {
-        return "vehicle{" +
+        return "Vehicle{" +
                 "vehicleId=" + vehicleId +
                 ", vehiclModle='" + vehiclModle + '\'' +
                 ", vtId=" + vtId +

@@ -2,18 +2,18 @@ package cn.tangcco.entity;
 
 /*   id int(11) NOT NULL主键
    areaid char(6) NOT NULL区县编码
-   areas varchar(40) NOT NULL区县名称
+   Areas varchar(40) NOT NULL区县名称
    cityid char(6) NOT NULL所属城市编码*/
-public class areas {
+public class Areas {
     private Integer id;
     private String areaid;
     private String areas;
     private String cityid;
 
-    public areas() {
+    public Areas() {
     }
 
-    public areas(Integer id, String areaid, String areas, String cityid) {
+    public Areas(Integer id, String areaid, String areas, String cityid) {
         this.id = id;
         this.areaid = areaid;
         this.areas = areas;
@@ -54,10 +54,10 @@ public class areas {
 
     @Override
     public String toString() {
-        return "areas{" +
+        return "Areas{" +
                 "id=" + id +
                 ", areaid='" + areaid + '\'' +
-                ", areas='" + areas + '\'' +
+                ", Areas='" + areas + '\'' +
                 ", cityid='" + cityid + '\'' +
                 '}';
     }

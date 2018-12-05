@@ -8,7 +8,7 @@ provinceId varchar(200) NOT NULL省级单位ID
 cityId varchar(200) NOT NULL市级单位ID
 areaId varchar(200) NOT NULL地区单位ID
 detail varchar(800) NOT NULL详细地址*/
-public class address {
+public class Address {
     private Integer addressId;
     private Integer adminId;
     private Integer driverId;
@@ -17,10 +17,10 @@ public class address {
     private String areaId;
     private String detail;
 
-    public address() {
+    public Address() {
     }
 
-    public address(Integer addressId, Integer adminId, Integer driverId, String provinceId, String cityId, String areaId, String detail) {
+    public Address(Integer addressId, Integer adminId, Integer driverId, String provinceId, String cityId, String areaId, String detail) {
         this.addressId = addressId;
         this.adminId = adminId;
         this.driverId = driverId;
@@ -88,7 +88,7 @@ public class address {
 
     @Override
     public String toString() {
-        return "address{" +
+        return "Address{" +
                 "addressId=" + addressId +
                 ", adminId=" + adminId +
                 ", driverId=" + driverId +

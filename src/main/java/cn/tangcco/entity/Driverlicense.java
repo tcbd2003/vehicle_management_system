@@ -8,7 +8,7 @@ validPeriod datetime NOT NULL驾驶证到期日期
 ds varchar(200) NOT NULL删除状态 正常:01 标记删除:02
 dls varchar(200) NOT NULL驾照状态 正常:01 吊销:02
 office varchar(200) NOT NULL发证机关*/
-public class driverlicense {
+public class Driverlicense {
     private Integer dlId;
     private Integer driverId;
     private Integer dtId;
@@ -18,10 +18,10 @@ public class driverlicense {
     private String dls;
     private String office;
 
-    public driverlicense() {
+    public Driverlicense() {
     }
 
-    public driverlicense(Integer dlId, Integer driverId, Integer dtId, String dateOfFirst, String validPeriod, String ds, String dls, String office) {
+    public Driverlicense(Integer dlId, Integer driverId, Integer dtId, String dateOfFirst, String validPeriod, String ds, String dls, String office) {
         this.dlId = dlId;
         this.driverId = driverId;
         this.dtId = dtId;
@@ -98,7 +98,7 @@ public class driverlicense {
 
     @Override
     public String toString() {
-        return "driverlicense{" +
+        return "Driverlicense{" +
                 "dlId=" + dlId +
                 ", driverId=" + driverId +
                 ", dtId=" + dtId +

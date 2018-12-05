@@ -14,7 +14,7 @@ householdRegistr varchar(500) NOT NULL户籍所在地
 addressId varchar(200) NOT NULL住址表ID
 driverLicenseId varchar(200) NOT NULL驾驶证ID
 ds varchar(200) NOT NULL删除状态 正常:01 标记删除:02*/
-public class driver {
+public class Driver {
     private Integer driverId;
     private String driverName;
     private String nationality;
@@ -28,10 +28,10 @@ public class driver {
     private String driverLicenseId;
     private String ds;
 
-    public driver() {
+    public Driver() {
     }
 
-    public driver(Integer driverId, String driverName, String nationality, String gender, String email, String phone, String birthday, String IDcardNo, String householdRegistr, String addressId, String driverLicenseId, String ds) {
+    public Driver(Integer driverId, String driverName, String nationality, String gender, String email, String phone, String birthday, String IDcardNo, String householdRegistr, String addressId, String driverLicenseId, String ds) {
         this.driverId = driverId;
         this.driverName = driverName;
         this.nationality = nationality;
@@ -144,7 +144,7 @@ public class driver {
 
     @Override
     public String toString() {
-        return "driver{" +
+        return "Driver{" +
                 "driverId=" + driverId +
                 ", driverName='" + driverName + '\'' +
                 ", nationality='" + nationality + '\'' +
